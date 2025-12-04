@@ -1,0 +1,124 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sooner Success - Project Idea</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navbar (same on every page) -->
+        <header class="bg-red-700 text-white shadow-md">
+            <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <a href="index.html" class="text-xl font-bold tracking-tight hover:text-yellow-200 transition">
+                        Sooner Success
+                    </a>
+                    <div class="hidden md:flex space-x-6 text-sm font-medium">
+                        <a href="index.html" class="hover:text-yellow-200 transition">Home</a>
+                        <a href="project.html" class="hover:text-yellow-200 transition">Project Idea</a>
+                        <a href="importance.html" class="hover:text-yellow-200 transition">Importance</a>
+                        <a href="timeline.html" class="hover:text-yellow-200 transition">Timeline</a>
+                        <a href="tailwind-reflection.html" class="hover:text-yellow-200 transition">Tailwind Reflection</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-btn" class="p-2 rounded hover:bg-red-800 focus:outline-none">
+                            <span class="sr-only">Open main menu</span>
+                            <div class="space-y-1">
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div id="mobile-menu" class="md:hidden hidden border-t border-red-600">
+                <div class="px-4 pb-4 space-y-2 text-sm font-medium">
+                    <a href="index.html" class="block py-1 hover:text-yellow-200">Home</a>
+                    <a href="project.html" class="block py-1 hover:text-yellow-200">Project Idea</a>
+                    <a href="importance.html" class="block py-1 hover:text-yellow-200">Importance</a>
+                    <a href="timeline.html" class="block py-1 hover:text-yellow-200">Timeline</a>
+                    <a href="tailwind-reflection.html" class="block py-1 hover:text-yellow-200">Tailwind Reflection</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="flex-1">
+            <section class="bg-slate-100">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                        Project Idea: Sooner Success Career Hub
+                    </h1>
+                    <p class="text-slate-700 mb-6">
+                        Sooner Success is a centralized web hub that helps OU students organize their entire job and internship search in one place instead of juggling multiple disconnected platforms.
+                    </p>
+
+                    <section class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                        <h2 class="text-xl font-semibold text-slate-900 mb-2">Problem for Campus Students</h2>
+                        <p class="text-slate-700">
+                            Students often switch between sites like LinkedIn, Handshake, and Indeed while also tracking resumes, cover letters, and interview prep, which makes it hard to stay organized and prepared.
+                        </p>
+                    </section>
+
+                    <section class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                        <h2 class="text-xl font-semibold text-slate-900 mb-3">Core Features</h2>
+                        <div class="grid gap-4 md:grid-cols-2">
+                            <div class="border border-slate-200 rounded-lg p-4">
+                                <h3 class="font-semibold text-slate-900 mb-1">Personalized Resume & Cover Letter</h3>
+                                <p class="text-sm text-slate-700">
+                                    Students store a base resume and cover letter, then quickly customize versions for each role while keeping everything organized by application.
+                                </p>
+                            </div>
+                            <div class="border border-slate-200 rounded-lg p-4">
+                                <h3 class="font-semibold text-slate-900 mb-1">Career Resources Hub</h3>
+                                <p class="text-sm text-slate-700">
+                                    A curated page with interview tips, case study guides, and sample questions so students do not have to search across multiple websites.
+                                </p>
+                            </div>
+                            <div class="border border-slate-200 rounded-lg p-4">
+                                <h3 class="font-semibold text-slate-900 mb-1">Personal Overview & Strengths</h3>
+                                <p class="text-sm text-slate-700">
+                                    A dashboard where students reflect on strengths, weaknesses, and career interests, helping them align applications with their profile.
+                                </p>
+                            </div>
+                            <div class="border border-slate-200 rounded-lg p-4">
+                                <h3 class="font-semibold text-slate-900 mb-1">Assessment & Skill Practice</h3>
+                                <p class="text-sm text-slate-700">
+                                    Short assessments to practice critical thinking, problem solving, and data analysis to build interview-ready confidence.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="bg-white rounded-xl shadow-sm p-6">
+                        <h2 class="text-xl font-semibold text-slate-900 mb-2">Future Integrations</h2>
+                        <p class="text-slate-700">
+                            Long term, the platform could pull status updates from LinkedIn, Indeed, Handshake, and other tools so students can see completed and in-progress applications in one dashboard.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-slate-900 text-slate-200 text-sm mt-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+                <p>&copy; 2025 Sooner Success. All rights reserved.</p>
+                <p class="text-xs">MIS 4013 • University of Oklahoma</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sooner Success - Timeline</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navbar -->
+        <header class="bg-red-700 text-white shadow-md">
+            <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <a href="index.html" class="text-xl font-bold tracking-tight hover:text-yellow-200 transition">
+                        Sooner Success
+                    </a>
+                    <div class="hidden md:flex space-x-6 text-sm font-medium">
+                        <a href="index.html" class="hover:text-yellow-200 transition">Home</a>
+                        <a href="project.html" class="hover:text-yellow-200 transition">Project Idea</a>
+                        <a href="importance.html" class="hover:text-yellow-200 transition">Importance</a>
+                        <a href="timeline.html" class="hover:text-yellow-200 transition">Timeline</a>
+                        <a href="tailwind-reflection.html" class="hover:text-yellow-200 transition">Tailwind Reflection</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-btn" class="p-2 rounded hover:bg-red-800 focus:outline-none">
+                            <span class="sr-only">Open main menu</span>
+                            <div class="space-y-1">
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div id="mobile-menu" class="md:hidden hidden border-t border-red-600">
+                <div class="px-4 pb-4 space-y-2 text-sm font-medium">
+                    <a href="index.html" class="block py-1 hover:text-yellow-200">Home</a>
+                    <a href="project.html" class="block py-1 hover:text-yellow-200">Project Idea</a>
+                    <a href="importance.html" class="block py-1 hover:text-yellow-200">Importance</a>
+                    <a href="timeline.html" class="block py-1 hover:text-yellow-200">Timeline</a>
+                    <a href="tailwind-reflection.html" class="block py-1 hover:text-yellow-200">Tailwind Reflection</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="flex-1">
+            <section class="bg-slate-100">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                        Project Timeline & Milestones
+                    </h1>
+                    <p class="text-slate-700 mb-6">
+                        This timeline outlines how the Sooner Success team will move from an initial idea and survey results to a functional prototype for OU students.
+                    </p>
+
+                    <div class="space-y-4">
+                        <article class="bg-white border-l-4 border-red-600 shadow-sm rounded-r-xl p-4">
+                            <h2 class="text-lg font-semibold text-slate-900">Week 1–2: Discovery & Refinement</h2>
+                            <p class="text-sm text-slate-700">
+                                Finalize the problem statement, review survey findings, and prioritize the most valuable features for the initial version.
+                            </p>
+                        </article>
+
+                        <article class="bg-white border-l-4 border-sky-600 shadow-sm rounded-r-xl p-4">
+                            <h2 class="text-lg font-semibold text-slate-900">Week 3–4: Wireframes & UX</h2>
+                            <p class="text-sm text-slate-700">
+                                Design low-fidelity wireframes for the resume editor, resources page, overview dashboard, and assessment module using student feedback.
+                            </p>
+                        </article>
+
+                        <article class="bg-white border-l-4 border-emerald-600 shadow-sm rounded-r-xl p-4">
+                            <h2 class="text-lg font-semibold text-slate-900">Week 5–7: Development Sprint</h2>
+                            <p class="text-sm text-slate-700">
+                                Build the core pages, implement data structures for saving applications and documents, and test responsive layouts.
+                            </p>
+                        </article>
+
+                        <article class="bg-white border-l-4 border-indigo-600 shadow-sm rounded-r-xl p-4">
+                            <h2 class="text-lg font-semibold text-slate-900">Week 8–9: Testing & Feedback</h2>
+                            <p class="text-sm text-slate-700">
+                                Conduct usability tests with classmates, refine content, and adjust navigation or features based on student input.
+                            </p>
+                        </article>
+
+                        <article class="bg-white border-l-4 border-slate-600 shadow-sm rounded-r-xl p-4">
+                            <h2 class="text-lg font-semibold text-slate-900">Week 10: Final Demo & Reflection</h2>
+                            <p class="text-sm text-slate-700">
+                                Prepare a demo showcasing how Sooner Success supports students across class years and document lessons learned for future iterations.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-slate-900 text-slate-200 text-sm mt-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+                <p>&copy; 2025 Sooner Success. All rights reserved.</p>
+                <p class="text-xs">MIS 4013 • University of Oklahoma</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+    </script>
+</body>
+</html>

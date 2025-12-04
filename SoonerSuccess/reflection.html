@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sooner Success - Tailwind Reflection</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navbar -->
+        <header class="bg-red-700 text-white shadow-md">
+            <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <a href="index.html" class="text-xl font-bold tracking-tight hover:text-yellow-200 transition">
+                        Sooner Success
+                    </a>
+                    <div class="hidden md:flex space-x-6 text-sm font-medium">
+                        <a href="index.html" class="hover:text-yellow-200 transition">Home</a>
+                        <a href="project.html" class="hover:text-yellow-200 transition">Project Idea</a>
+                        <a href="importance.html" class="hover:text-yellow-200 transition">Importance</a>
+                        <a href="timeline.html" class="hover:text-yellow-200 transition">Timeline</a>
+                        <a href="tailwind-reflection.html" class="hover:text-yellow-200 transition">Tailwind Reflection</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-btn" class="p-2 rounded hover:bg-red-800 focus:outline-none">
+                            <span class="sr-only">Open main menu</span>
+                            <div class="space-y-1">
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div id="mobile-menu" class="md:hidden hidden border-t border-red-600">
+                <div class="px-4 pb-4 space-y-2 text-sm font-medium">
+                    <a href="index.html" class="block py-1 hover:text-yellow-200">Home</a>
+                    <a href="project.html" class="block py-1 hover:text-yellow-200">Project Idea</a>
+                    <a href="importance.html" class="block py-1 hover:text-yellow-200">Importance</a>
+                    <a href="timeline.html" class="block py-1 hover:text-yellow-200">Timeline</a>
+                    <a href="tailwind-reflection.html" class="block py-1 hover:text-yellow-200">Tailwind Reflection</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN -->
+        <main class="flex-1">
+            <section class="bg-white">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                    <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">
+                        Tailwind CSS Reflection
+                    </h1>
+                    <p class="text-slate-700 mb-6">
+                        This site was built using Tailwind CSS utility classes to handle layout, colors, spacing, and responsive behavior directly in the HTML.
+                    </p>
+
+                    <section class="mb-8">
+                        <h2 class="text-2xl font-semibold text-slate-900 mb-3">Tailwind Features Used</h2>
+                        <ul class="list-disc pl-5 space-y-2 text-sm text-slate-700">
+                            <li>
+                                <strong>Flexbox layout:</strong> The header and footer use
+                                <code class="bg-slate-100 px-1 rounded text-xs">flex</code> and
+                                <code class="bg-slate-100 px-1 rounded text-xs">justify-between</code>
+                                to align brand text and navigation links.
+                            </li>
+                            <li>
+                                <strong>Grid layout:</strong> Team member cards and importance reasons use
+                                <code class="bg-slate-100 px-1 rounded text-xs">grid</code> with
+                                <code class="bg-slate-100 px-1 rounded text-xs">sm:grid-cols-2</code> and
+                                <code class="bg-slate-100 px-1 rounded text-xs">lg:grid-cols-4</code>
+                                to adapt to different screen sizes.
+                            </li>
+                            <li>
+                                <strong>Responsive breakpoints:</strong> Classes like
+                                <code class="bg-slate-100 px-1 rounded text-xs">md:hidden</code>,
+                                <code class="bg-slate-100 px-1 rounded text-xs">sm:px-6</code>, and
+                                <code class="bg-slate-100 px-1 rounded text-xs">lg:px-8</code>
+                                adjust spacing and visibility across mobile, tablet, and desktop.
+                            </li>
+                            <li>
+                                <strong>Hover states:</strong> Navigation links and cards use
+                                <code class="bg-slate-100 px-1 rounded text-xs">hover:text-yellow-200</code> and
+                                <code class="bg-slate-100 px-1 rounded text-xs">hover:shadow-md</code>
+                                to provide interactive feedback.
+                            </li>
+                            <li>
+                                <strong>Colors, borders, and shadows:</strong> Backgrounds like
+                                <code class="bg-slate-100 px-1 rounded text-xs">bg-red-700</code> and
+                                <code class="bg-slate-100 px-1 rounded text-xs">bg-slate-50</code>,
+                                borders such as
+                                <code class="bg-slate-100 px-1 rounded text-xs">border-l-4</code>,
+                                and shadows like
+                                <code class="bg-slate-100 px-1 rounded text-xs">shadow-sm</code>
+                                create visual hierarchy.
+                            </li>
+                            <li>
+                                <strong>Typography utilities:</strong> Classes including
+                                <code class="bg-slate-100 px-1 rounded text-xs">text-3xl</code>,
+                                <code class="bg-slate-100 px-1 rounded text-xs">font-extrabold</code>, and
+                                <code class="bg-slate-100 px-1 rounded text-xs">tracking-wide</code>
+                                help size and style text consistently.
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-semibold text-slate-900 mb-3">Tailwind vs. Bootstrap (Group Opinion)</h2>
+                        <p class="text-sm text-slate-700 mb-2">
+                            As a group, adjust this section to share your own honest rating and experience. For example, you could describe how easy it felt to customize layouts, how quickly you could build components, and how it compared to using Bootstrap’s pre-made components.
+                        </p>
+                        <p class="text-sm text-slate-700">
+                            Keep the focus on what your group liked, what felt challenging, and which framework you would choose for a future project and why.
+                        </p>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-slate-900 text-slate-200 text-sm mt-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+                <p>&copy; 2025 Sooner Success. All rights reserved.</p>
+                <p class="text-xs">MIS 4013 • University of Oklahoma</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sooner Success - Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navbar -->
+        <header class="bg-red-700 text-white shadow-md">
+            <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <a href="index.html" class="text-xl font-bold tracking-tight hover:text-yellow-200 transition">
+                        Sooner Success
+                    </a>
+                    <div class="hidden md:flex space-x-6 text-sm font-medium">
+                        <a href="index.html" class="hover:text-yellow-200 transition">Home</a>
+                        <a href="project.html" class="hover:text-yellow-200 transition">Project Idea</a>
+                        <a href="importance.html" class="hover:text-yellow-200 transition">Importance</a>
+                        <a href="timeline.html" class="hover:text-yellow-200 transition">Timeline</a>
+                        <a href="tailwind-reflection.html" class="hover:text-yellow-200 transition">Tailwind Reflection</a>
+                    </div>
+                    <div class="md:hidden">
+                        <button id="mobile-menu-btn" class="p-2 rounded hover:bg-red-800 focus:outline-none">
+                            <span class="sr-only">Open main menu</span>
+                            <div class="space-y-1">
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                                <span class="block h-0.5 w-6 bg-white"></span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div id="mobile-menu" class="md:hidden hidden border-t border-red-600">
+                <div class="px-4 pb-4 space-y-2 text-sm font-medium">
+                    <a href="index.html" class="block py-1 hover:text-yellow-200">Home</a>
+                    <a href="project.html" class="block py-1 hover:text-yellow-200">Project Idea</a>
+                    <a href="importance.html" class="block py-1 hover:text-yellow-200">Importance</a>
+                    <a href="timeline.html" class="block py-1 hover:text-yellow-200">Timeline</a>
+                    <a href="tailwind-reflection.html" class="block py-1 hover:text-yellow-200">Tailwind Reflection</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN: About the Group -->
+        <main class="flex-1">
+            <section class="bg-white">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+                    <div class="text-center mb-8">
+                        <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-3">
+                            Meet the Sooner Success Team
+                        </h1>
+                        <p class="text-slate-600 max-w-2xl mx-auto">
+                            A student-led team designing a centralized career hub to help OU students stay organized, confident, and prepared for internships and full-time roles.
+                        </p>
+                    </div>
+
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        <!-- Reem -->
+                        <article class="bg-red-50 border border-red-100 rounded-xl shadow-sm hover:shadow-md transition p-4 flex flex-col">
+                            <h2 class="text-lg font-semibold text-red-900 mb-1">Reem Kotaiche</h2>
+                            <p class="text-xs uppercase tracking-wide text-red-700 mb-2">Team Leader • Product Lead</p>
+                            <p class="text-sm text-slate-700 flex-1">
+                                Coordinates project milestones, leads requirements gathering, and ensures the platform aligns with student needs across majors.
+                            </p>
+                            <a href="mailto:reem@ou.edu" class="mt-3 inline-block text-sm text-red-700 hover:text-red-900 underline">
+                                reem@ou.edu
+                            </a>
+                        </article>
+
+                        <!-- Ariana -->
+                        <article class="bg-sky-50 border border-sky-100 rounded-xl shadow-sm hover:shadow-md transition p-4 flex flex-col">
+                            <h2 class="text-lg font-semibold text-sky-900 mb-1">Ariana Hanaei</h2>
+                            <p class="text-xs uppercase tracking-wide text-sky-700 mb-2">UX Designer • Research</p>
+                            <p class="text-sm text-slate-700 flex-1">
+                                Focuses on user flows, survey insights, and interface layouts that make job search tasks simple and intuitive.
+                            </p>
+                            <a href="mailto:ariana.hanaei-1@ou.edu" class="mt-3 inline-block text-sm text-sky-700 hover:text-sky-900 underline">
+                                ariana.hanaei-1@ou.edu
+                            </a>
+                        </article>
+
+                        <!-- Erin -->
+                        <article class="bg-emerald-50 border border-emerald-100 rounded-xl shadow-sm hover:shadow-md transition p-4 flex flex-col">
+                            <h2 class="text-lg font-semibold text-emerald-900 mb-1">Erin Perry</h2>
+                            <p class="text-xs uppercase tracking-wide text-emerald-700 mb-2">Developer • Data</p>
+                            <p class="text-sm text-slate-700 flex-1">
+                                Implements core features, structures data for resumes, assessments, and job tracking, and supports integration planning.
+                            </p>
+                            <a href="mailto:erin333@ou.edu" class="mt-3 inline-block text-sm text-emerald-700 hover:text-emerald-900 underline">
+                                erin333@ou.edu
+                            </a>
+                        </article>
+
+                        <!-- Macy -->
+                        <article class="bg-indigo-50 border border-indigo-100 rounded-xl shadow-sm hover:shadow-md transition p-4 flex flex-col">
+                            <h2 class="text-lg font-semibold text-indigo-900 mb-1">Macy Fallin</h2>
+                            <p class="text-xs uppercase tracking-wide text-indigo-700 mb-2">Content • Testing</p>
+                            <p class="text-sm text-slate-700 flex-1">
+                                Curates career resources, crafts copy for pages, and helps test workflows from a student perspective.
+                            </p>
+                            <a href="mailto:macy.m.fallin-1@ou.edu" class="mt-3 inline-block text-sm text-indigo-700 hover:text-indigo-900 underline">
+                                macy.m.fallin-1@ou.edu
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-slate-900 text-slate-200 text-sm mt-8">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+                <p>&copy; 2025 Sooner Success. All rights reserved.</p>
+                <p class="text-xs">MIS 4013 • University of Oklahoma</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    }
+    </script>
+</body>
+</html>
